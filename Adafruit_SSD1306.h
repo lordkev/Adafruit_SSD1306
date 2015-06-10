@@ -16,6 +16,9 @@ BSD license, check license.txt for more information
 All text above, and the splash screen must be included in any redistribution
 *********************************************************************/
 
+#ifndef ADAFRUIT_SSD1306_H
+#define ADAFRUIT_SSD1306_H
+
 #if ARDUINO >= 100
  #include "Arduino.h"
  #define WIRE_WRITE Wire.write
@@ -204,3 +207,6 @@ class Adafruit_SSD1306 : public Adafruit_GFX {
   inline bool inSegment(int16_t y);
   inline int16_t ySegmentOffset(int16_t y);
 };
+
+#endif /* ADAFRUIT_SSD1306_H */
+
